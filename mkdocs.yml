@@ -1,7 +1,22 @@
 site_name: MKDocs Demo Document
 theme:
   name: material
+  font:
+    text: Work Sans
   language: en
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    primary: indigo
+    scheme: default
+    toggle:
+      icon: material/brightness-2
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    primary: indigo
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
   icon:
     # logo: material/school
     logo: fontawesome/solid/book-open
@@ -11,6 +26,16 @@ theme:
     - content.code.select
     # - navigation.tabs
     - navigation.path
+    # - search.suggest
+    # - search.highlight
+
+# repo_name: squidfunk/mkdocs-material
+# site_url: ""
+# site_url: 'https://docs.example.com/'
+# use_directory_urls: false
+
+# extra_css:
+#   - css/custom.css
 
 extra:
   version:
