@@ -1,0 +1,41 @@
+site_name: MKDocs Demo Document
+theme:
+  name: material
+  language: en
+  icon:
+    # logo: material/school
+    logo: fontawesome/solid/book-open
+    # repo: fontawesome/brands/git-alt
+  features:
+    - content.code.copy
+    - content.code.select
+    # - navigation.tabs
+    - navigation.path
+
+extra:
+  version:
+    provider: mike
+
+markdown_extensions:
+  # for admonition
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # for code highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # for diagram
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # for icons
+  # - attr_list
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
